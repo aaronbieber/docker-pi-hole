@@ -1,5 +1,6 @@
 192.168.10.1 router
 192.168.10.15 beacon
+192.168.10.20 sentinel
 192.168.10.25 octopi
 192.168.10.30 kepler
 192.168.10.40 copernicus
