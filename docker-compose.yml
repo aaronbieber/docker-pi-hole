@@ -1,7 +1,7 @@
 version: "3"
 services:
   pihole:
-    image: diginc/pi-hole
+    image: pihole/pihole
     ports:
       - "${HOST_IP}:53:53/tcp"
       - "${HOST_IP}:53:53/udp"
@@ -9,11 +9,15 @@ services:
     environment:
       # enter your docker host IP here
       ServerIP: ${HOST_IP}
+      WEBPASSWORD: password
+      TZ: "America/New_York"
+    dns:
+      - 127.0.0.1
+      - 1.1.1.1
     # Add your own custom hostnames you need for your domain
     extra_hosts:
       - "pihole.gquad.space:${HOST_IP}"
     volumes:
       - "./pihole:/etc/pihole"
       - "./dnsmasq.d:/etc/dnsmasq.d"
-      - "./log/pihole.log:/var/log/pihole.log"
     restart: always
