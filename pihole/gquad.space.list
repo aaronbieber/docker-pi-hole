@@ -3,7 +3,7 @@
 192.168.10.20 sentinel
 192.168.10.25 octopi
 192.168.10.30 kepler
-192.168.10.40 copernicus
+192.168.10.40 copernicus core-dev.com ssh.core-dev.com
 192.168.10.41 mqtt
 192.168.10.42 home
 192.168.10.43 unifi
