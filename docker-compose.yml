@@ -21,3 +21,4 @@ services:
       - "./pihole:/etc/pihole"
       - "./dnsmasq.d:/etc/dnsmasq.d"
     restart: always
+    shm_size: 2g
