@@ -1,5 +1,3 @@
-log/
-pihole/
-!pihole/gquad.space.list
+pihole/*
+!pihole/custom.list
 dnsmasq.d/
-!dnsmasq.d/02-gquad.space.conf
